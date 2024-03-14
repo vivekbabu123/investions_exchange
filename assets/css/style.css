@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Black.ttf);
+	font-weight: 900;
+}.mark_crupp p
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-ExtraBold.ttf);
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-ExtraLight.ttf);
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Light.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Medium.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Thin.ttf);
+	font-weight: 100;
+}
+
+:root {
+	--blue-bg: #0d426d;
+	--white-: #ffffff;
+	--white-p: #bcbcbc;
+	--black: #000000;
+	--market-: #212223;
+	--gray-: #A7A7A7;
+	--green-: #26CF42;
+	--red--: #E40909;
+	--slite-: #AEAEAE;
+
+}
+
+section {
+	padding: 20px 0;
+}
+
+/* start header */
+.menu_nav {
+	background-color: var(--blue-bg);
+}
+
+.navbar {
+	padding-bottom: 0px !important;
+}
+
+.vr {
+	border-left: 2px solid var(--white-);
+	height: 36px;
+	margin-left: 10px;
+}
+
+.nav-link {
+	font-family: Montserrat;
+	margin: 0 15px;
+	font-weight: 400;
+	color: var(--white-p) !important;
+}
+
+.navbar-brand {
+	padding-bottom: 0px !important
+}
+
+.menu_logo {
+	border-left: 4px solid var(--black) !important;
+	border-right: 4px solid var(--black) !important;
+}
+
+.menu_logo::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 14px solid var(--white-);
+	border-left: 9px solid transparent;
+	left: -4%;
+	opacity: 0.6;
+	top: 85%;
+}
+
+.menu_logo::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 14px solid var(--white-);
+	border-right: 15px solid transparent;
+	opacity: 0.6;
+	top: 85%;
+}
+
+/* finish header */
+/* start col-1  */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	background: var(--blue-bg) !important;
+	border-radius: 0 !important;
+	color: var(--white-) !important;
+}
+
+.btc button {
+	padding: 10px 10px;
+}
+
+.btc_tab button {
+	border: 1px solid red !important;
+}
+
+.market_input span {
+	border-radius: 10px 0 0 10px;
+}
+
+.market_input input {
+	border-radius: 0px 10px 10px 0;
+}
+
+.market_head p {
+	font-family: Montserrat;
+	font-weight: 400;
+	margin-bottom: 0 !important;
+
+}
+
+.market_table {
+	padding: 10px;
+}
+
+.market_btc {
+	display: flex;
+	align-items: center !important;
+}
+
+.market_btc span {
+	color: var(--gray-);
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.market_green p {
+	color: var(--green-);
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0 !important;
+}
+
+.mark_crupp p {
+	font-size: 14px;
+	font-weight: 400;
+	margin: 6px;
+}
+
+.market_tt p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.market_tt span {
+	color: var(--gray-);
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.market_red p {
+	color: var(--red--);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.market_scrool {
+	overflow-y: scroll;
+	height: 425px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.market_log p {
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 600;
+
+}
+
+/* finish col-1 */
+/* start col-2 */
+/* start col-3 */
+.inr_exchange {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 16px
+}
+
+.inr_p p {
+	font-family: Montserrat;
+	color: var(--slite-);
+	font-weight: 400;
+}
+
+.inr_e p {
+	font-family: Montserrat;
+	color: var(--slite-);
+	font-weight: 400;
+}
+
+.high_inr p {
+	font-family: Montserrat;
+	color: var(--green-);
+	font-weight: 400;
+}
+
+.low_inr p {
+	font-family: Montserrat;
+	color: var(--red--);
+	font-weight: 400
+}
+
+.chart_img img {
+	max-width: 950px;
+	min-height: 507px;
+}
+
+.inr_book p {
+	font-family: Montserrat;
+	font-weight: 600;
+
+}
+
+.order_v p {
+	font-family: Montserrat;
+	font-weight: 400;
+	color: var(--black);
+}
+
+/* finish col-2 */
+.history_heading h1 {
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: 500;
+}
+
+.order_p p {
+	color: var(--red--);
+	font-weight: 400;
+
+}
+
+.order_green p {
+	color: #109A27;
+	font-weight: 400;
+}
+
+.order_scrool {
+	overflow-y: scroll !important;
+	height: 489px;
+}
+/* finish col-3 */
+/* start media query */
+@media all and (min-width:1201px) and (max-width:1400px) {
+	.chart_img img{
+		width: 650px;
+	}
+}
+@media all and (min-width:993px) and (max-width:1200px) {
+	.chart_img img{
+		width: 505px;
+	}
+}
+@media all and (min-width:768px) and (max-width:992px) {
+	.chart_img img{
+		width: 340px;
+	}
+}
+@media all and (min-width:320px) and (max-width:767px) {
+	.chart_img img{
+		width: 300px;
+	}
+	
+}
+/* finish media query */

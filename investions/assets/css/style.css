@@ -1,0 +1,590 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x:hidden;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-Black.ttf);
+  font-weight:900;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(.//assets/fonts/Montserrat-Bold.ttf);
+  font-weight:700;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-ExtraBold.ttf);
+  font-weight:800
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-ExtraLight.ttf);
+  font-weight:200
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat-Light.ttf);
+  font-weight:300;
+}@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-Medium.ttf);
+  font-weight:500;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-weight:400;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-SemiBold.ttf);
+  font-weight:600;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-Thin.ttf);
+  font-weight:100;
+}
+:root{
+	--invotation--header-bg:#0d426d;
+	--invotation--color-header:#c9c3c3;
+	--invotation--white-color:#fff;
+	--invotation-black-color:#000000;
+	--black:#1c2668;
+	--black-rs:#1e265a;
+	--easeuse:#222529;
+	--content-:#a0a6a9;
+
+	
+}
+.container{
+	width:100%;
+	margin:0 auto;
+	}
+/************************start navbar**********************************/
+.nav_bar{
+	background-color:var(--invotation--header-bg);
+	padding:10px 0;
+	
+}
+.menu_bar{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+	z-index:-1;
+}
+.nav_logo{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;	
+
+}
+.nav_logo img{
+	width:20%;
+}
+.nav_logo a{
+	color:var(--invotation--color-header);
+	text-decoration:none;
+	font-weight:200;
+}
+.vr{
+	border-right:1px solid var(--invotation--color-header);
+	height:30px;
+
+}
+.nav_button{
+	margin:0 15px;
+}
+.nav_button button{
+	padding:8px 18px;
+	border-radius:5px;
+	background-color:var(--invotation--header-bg);
+	color:var(--invotation--color-header);
+	border:2px solid var(--invotation--color-header);
+	margin: 0 8px;
+}
+.nav_button button:hover{
+	background-color:var(--invotation--white-color);
+	color:var(--invotation-black-color);
+}
+/************************finish navbar***************************/
+/************************start Top-banner**********************************/
+section{
+padding:70px 0;
+}
+.banner{
+	background-color:var(--invotation--header-bg);
+	position:relative;
+	
+
+}
+.banner::before{
+	 content: "";
+  background-image: url('../images/top-banner/layer-1.png');
+	width:400px;
+  height:384px;
+  position:absolute;
+  top:-28px;
+  left:0;
+  transform: rotate(0deg);
+}
+.banner::after{
+	 content: "";
+  background-image: url('../images/top-banner/layer-2.png');
+	width:400px;
+  height:460px;
+  position:absolute;
+  top:-29px;
+  right:-107px;
+  transform: rotate(-11deg);
+}
+.main_banner{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.baneer_content h1{
+	font-size:36px;
+	color:var(--invotation--white-color);
+	font-weight:300;
+	margin-bottom:20px;
+}
+.baneer_images{
+	z-index:1;
+}
+.baneer_content p{
+	color:var(--invotation--color-header);
+	font-size:18px;
+	font-weight:200;
+	margin-bottom:18px;
+}
+.baneer_content button{
+	padding:10px 18px;
+	font-weight:600;
+	border:none;
+	border-radius:8px;
+	font-size:16px;
+	color:var(--black);
+}
+/************************finish Top-banner**********************************/
+/************************start card_banner**********************************/
+.main_card{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.super_card{
+	margin:0 10px;
+}
+.all_side{
+	width:120px;
+	height:35px;
+	border:2px solid black;
+	margin: 3rem 18rem;
+	background-color:var(--invotation--header-bg);
+	border-radius:5px;
+	}
+.all_side p{
+	text-align:center;
+	color:var(--invotation--white-color);
+	padding-top:7px;
+	}
+table{
+	width:70%;
+	text-align:center;
+	border:1px solid var(--invotation--white-color);
+	margin:0 auto;
+	background-color:var(--invotation--header-bg);
+	padding:8px 0;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	
+}
+table tr th{
+	padding: 0 50px;
+	color:var(--invotation--white-color);
+}
+.btn_view{
+	text-align: center;
+	margin-top:40px;
+	
+
+}
+.btn_view button{
+	padding:8px 30px;
+	background-color:var(--invotation--header-bg);
+	color:var(--invotation--white-color);
+	border:none;
+	font-size:16px;
+	font-weight:400;
+	border-radius:10px;
+	
+}
+/************************finish card_banner**********************************/
+/************************start intro_invest**********************************/
+.head_intro h1{
+	text-align:center;
+	color:var(--invotation--header-bg);
+	font-weight:600;
+	font-size:28px;
+}
+.Main_intro{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.intro_content h4{
+	font-weight:300;
+	color:var(--black);
+	border-bottom-style: dotted;
+	font-size:18px;
+	padding-bottom:20px;
+}
+.intro_content h4::first-letter {
+  color: var(--invotation-black-color);
+  font-size: 36px;
+}
+.intro_content p{
+	font-weight:200;
+	font-size:16px;
+	margin-top:10px;
+	color:var(--invotation--color-header);
+}
+/************************finish intro_invest**********************************/
+/************************start why choose us****************************/
+.head_choose h1{
+	text-align:center;
+	color:var(--invotation--header-bg);
+	font-weight:600;
+	font-size:28px;
+	
+}
+.strng{
+	text-align:center;
+	margin:40px 0;
+}
+.strng img{
+	padding:15px 0;
+}
+.strng h2{
+	padding:10px 0;
+	font-weight:300;
+	font-size:22px;
+	color:var(--black-rs);
+}
+.strng p{
+	color:var(--invotation--color-header);
+	font-size:18px;
+	font-weight:200;
+}
+.rs_security{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+hr{
+	border:1px solid var(--invotation--header-bg);
+}
+
+/************************finish why choose us**********************************/
+/************************start download our app now****************************/
+.app_now{
+	text-align:center;
+}
+.app_now h1{
+	color:var(--invotation--header-bg);
+	font-size:28px;
+}
+.icon_app{
+	display:flex;
+	align-items:center;
+}
+.icon_app h3{
+	font-size: 22px;
+    padding-top: 13px;
+}
+.main_app{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.icon_content p{
+	margin:15px 40px;
+	color:var(--easeuse);
+	text-align:justify;
+	font-weight:200;
+	word-spacing: 2px;
+	
+}
+.store_app{
+	text-align:justify;
+	padding-left:38px;
+
+
+}
+/***********************finish download our app now*********************************/
+/***********************start Frequntly asked Question*********************************/
+.asked_question{
+	background-color:var(--invotation--header-bg);
+}
+.freq_asked h1{
+	text-align:center;
+	color:var(--invotation--white-color);
+	font-size:26px;
+	font-weight:700;
+}
+.btn_accordian{
+	width:70%;
+	margin:0 auto;
+	padding-top:40px;
+}
+.accordion {
+
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+	border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin:10px 0;
+  font-weight:700;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 20px 18px;
+  display:none;
+  background-color: white;
+  overflow: hidden;
+}
+/***********************finish Frequntly asked Question*********************************/
+/***********************start support*********************************/
+.head_support h1{
+	text-align:center;
+	color:var(--invotation--header-bg);
+	font-size: 27px;
+    font-weight: 700;
+}
+.main_support{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.support_content p{
+	font-size:20px;
+	color:var(--invotation--color-header);
+	margin-bottom:25px;
+	font-weight: 500;
+}
+.support_content button{
+	padding:10px 25px;
+	font-size:18px;
+	background-color:var(--invotation--header-bg);
+	color:var(--invotation--white-color);
+	border:none;
+	border-radius:5px;
+}
+/***********************finish support********************************/
+/***********************start  footer********************************/
+.main_footer{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.footer_logo img{
+	width:30%;
+}
+.footer_logo p{
+	font-size:18px;
+	color:var(--invotation--color-header);
+	margin-bottom:10px;
+}
+.footer_logo svg{
+	margin:0 15px;
+	background-color:var(--invotation--header-bg);
+	border-radius:15px;
+	padding:6px;
+	margin-bottom:10px;
+
+}
+.footer_logo h4{
+color:var(--invotation--color-header);	
+font-weight:400;
+}
+.footer_link ul li{
+	list-style:none;
+	padding:8px 0;
+}
+.footer_link ul li a{
+	text-decoration:none;
+	color:var(--invotation--color-header);
+	
+}
+/***********************finish  footer********************************/
+/***********************start Media Query********************************/
+@media all and (min-width: 1025px) and (max-width: 1500px){
+	.banner::before{
+	display:none;
+}
+.banner::after{
+	display:none;
+}
+
+	
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px){
+.banner::before{
+	display:none;
+}
+.banner::after{
+	display:none;
+}
+	.super_card img{
+		width:90%;
+	}
+	.all_side {
+		margin:3rem 10rem;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+.banner::before{
+	display:none;
+}
+.banner::after{
+	display:none;
+}
+	.main_banner {
+  flex-direction:column-reverse;
+	}
+.main_card{
+	flex-direction:column;
+}
+table tr th{
+	padding:0 45px;
+}
+.Main_intro {
+	flex-direction:column;
+}
+.rs_security{
+	flex-direction:column;
+}
+.main_app{
+	flex-direction:column;
+}
+.main_footer{
+	flex-direction:column;
+	align-items:baseline;
+	margin-left:3rem;
+}
+	
+	
+	
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+.main_banner {
+  flex-direction:column-reverse;
+ 
+}
+.banner::before{
+	display:none;
+}
+.banner::after{
+	display:none;
+}
+.baneer_content{
+	padding-left:10px;
+}
+.baneer_content h1 {
+    font-size: 21px;
+}
+.baneer_content p{
+font-size:16px;
+}
+.baneer_content button{
+	margin-bottom:10px;
+	margin-left:3rem;
+}
+.baneer_images{
+	text-align:center;
+}
+	
+.baneer_images img{
+	width:90%;
+}
+.main_card{
+	flex-direction:column;
+	text-align:center;
+}
+.super_card img{
+	width:90%;
+}
+
+.all_side{
+margin:2rem 6rem;
+}	
+.currency_price{
+	overflow-x:scroll;
+}
+.Main_intro {
+	flex-direction:column;
+}
+.intro_img{
+	text-align:center;
+}
+.intro_img img{
+	width:90%;
+	margin:0 auto;
+}
+.intro_content{
+	padding-left:10px;
+}
+.rs_security{
+	flex-direction:column;
+}
+.strng p{
+	font-size:16px;
+}
+.main_app{
+	flex-direction:column;
+}
+.images_app img{
+	width:90%;
+	margin:0 auto;
+}
+.main_support{
+	flex-direction:column;
+}
+.support_img{
+	text-align:center
+}
+.support_img img{
+	width:90%;
+	margin:0 auto;
+}
+.support_content{
+	padding-left:10px;
+}
+.main_footer{
+	flex-direction:column;
+	align-items:baseline;
+	margin-left:1rem;
+}
+	
+
+}
+*********************finish Media Query********************************/
+
+
